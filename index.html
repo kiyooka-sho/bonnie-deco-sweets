@@ -854,12 +854,10 @@
       <p><strong>初回30分は無料相談です。</strong>お気軽にお問い合わせください。</p>
       <a class="btn btn-primary" href="#contact-form">見積りを相談する</a>
     </div>
-    <form class="contact-form" id="contact-form" aria-label="お問い合わせフォーム" action="https://formsubmit.co/6ecbc1cd725362d76ac0508b9994eb4b" method="POST">
-      <input type="hidden" name="_subject" value="【ホームページ】お問い合わせを受け付けました">
-      <input type="hidden" name="_cc" value="hayamizu@bonnie-deco.com">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://www.bonnie-deco.com/thanks.html">
-      <input type="hidden" name="_autoresponse" value="このたびはボニーデコスイーツ株式会社へお問い合わせいただき、誠にありがとうございます。下記の内容でお問い合わせを承りました。担当者より2営業日以内にご連絡いたします。なお、本メールは自動送信です。ご返信いただいてもお答えできない場合がございます。　ボニーデコスイーツ株式会社　〒190-0022 東京都立川市錦町2-11-2 アイディスクエア立川3階　TEL 042-508-3351">
+    <form class="contact-form" id="contact-form" aria-label="お問い合わせフォーム" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="defbb204-a593-448c-bf59-3a2d426897e7">
+      <input type="hidden" name="subject" value="【ホームページ】お問い合わせがありました">
+      <input type="hidden" name="redirect" value="https://www.bonnie-deco.com/thanks.html">
       <div class="form-row">
         <label for="cf-name">お名前<span class="req">必須</span></label>
         <input type="text" id="cf-name" name="name" autocomplete="name" required>
@@ -887,7 +885,7 @@
         <textarea id="cf-message" name="message" rows="5" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary form-submit">この内容で送信する</button>
-      <p class="form-note">※送信の前にロボットでないことの確認画面が表示されます。送信後、ご入力のメールアドレス宛に受付の自動返信をお送りします。</p>
+      <p class="form-note">※いただいた内容は担当者へ直接届きます。2営業日以内にご連絡いたします。</p>
     </form>
   </div>
 </section>
