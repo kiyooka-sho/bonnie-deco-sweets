@@ -127,10 +127,18 @@
   .brand-logo{height:34px;width:auto;display:block;}
   header.site .wrap>.brand,header.site .wrap>.header-right{flex:0 0 auto;}
   .header-right{display:flex;align-items:center;gap:22px;}
-  nav.site{display:flex;gap:26px;overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none;}
-  nav.site::-webkit-scrollbar{display:none;}
+  nav.site{display:flex;gap:26px;overflow:visible;}
   nav.site a{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500;white-space:nowrap;padding:4px 2px;}
   nav.site a:hover,nav.site a:focus-visible{color:var(--berry);}
+  .nav-dropdown{position:relative;}
+  .nav-dropdown>summary{display:flex;align-items:center;gap:5px;cursor:pointer;list-style:none;color:var(--muted);font-size:14.5px;font-weight:500;white-space:nowrap;padding:4px 2px;}
+  .nav-dropdown>summary::-webkit-details-marker{display:none;}
+  .nav-dropdown>summary::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-top:-3px;transition:transform .15s ease;}
+  .nav-dropdown[open]>summary::after{transform:rotate(-135deg);margin-top:3px;}
+  .nav-dropdown>summary:hover,.nav-dropdown>summary:focus-visible{color:var(--berry);}
+  .nav-dropdown-menu{position:absolute;top:calc(100% + 10px);left:0;z-index:30;min-width:230px;display:flex;flex-direction:column;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:8px;box-shadow:0 16px 32px -20px rgba(0,0,0,.35);}
+  .nav-dropdown-menu a{padding:9px 10px;border-radius:8px;}
+  .nav-dropdown-menu a:hover,.nav-dropdown-menu a:focus-visible{background:var(--berry-soft);}
   .header-contact{
     display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;white-space:nowrap;
     padding:9px 18px;border-radius:999px;background:var(--berry);color:#fff;
@@ -477,8 +485,12 @@
     }
     nav.site a{padding:12px 4px;border-bottom:1px solid var(--line);font-size:15px;}
     nav.site a:last-child{border-bottom:none;}
+    .nav-dropdown>summary{padding:12px 4px;border-bottom:1px solid var(--line);font-size:15px;}
+    .nav-dropdown-menu{position:static;top:auto;left:auto;min-width:0;background:transparent;border:none;border-radius:0;box-shadow:none;padding:0 0 4px 14px;gap:0;}
+    .nav-dropdown-menu a{padding:10px 4px;border-bottom:1px solid var(--line);font-size:14.5px;}
+    .nav-dropdown-menu a:last-child{border-bottom:none;}
     header.site.nav-open nav.site{
-      max-height:420px;opacity:1;visibility:visible;padding:6px 24px 12px;border-top:1px solid var(--line);
+      max-height:80vh;overflow-y:auto;opacity:1;visibility:visible;padding:6px 24px 12px;border-top:1px solid var(--line);
     }
   }
   @media (max-width:600px){
@@ -515,13 +527,18 @@
     </div>
     <div class="header-right">
       <nav class="site" id="siteNav">
-        <a href="#services">サービス</a>
+        <details class="nav-dropdown">
+          <summary>サービス</summary>
+          <div class="nav-dropdown-menu">
+            <a href="#services">サービス概要</a>
+            <a href="food-maker-pb.html">食品メーカー様のPB開発</a>
+            <a href="concept-cafe.html">コンセプトカフェ様の開発</a>
+          </div>
+        </details>
         <a href="#why">選ばれる理由</a>
         <a href="#flow">ご発注の流れ</a>
         <a href="#founder">代表について</a>
         <a href="#niche">こんな方に</a>
-        <a href="food-maker-pb.html">食品メーカー様へ</a>
-        <a href="concept-cafe.html">コンセプトカフェ様へ</a>
         <a href="#faq">よくある質問</a>
       </nav>
       <a class="header-contact" href="#contact">お問い合わせ</a>
