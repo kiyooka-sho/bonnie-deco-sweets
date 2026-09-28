@@ -7,6 +7,18 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.bonnie-deco.com/food-maker-pb.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bonnie-deco.com/concept-cafe.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.bonnie-deco.com/privacy-policy.html</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>yearly</changefreq>

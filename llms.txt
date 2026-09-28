@@ -43,6 +43,8 @@
 ## ページ
 
 - [トップページ](https://www.bonnie-deco.com/)：サービス、選ばれる理由、ご発注の流れ、代表について、よくある質問、お問い合わせ
+- [食品メーカー様のスイーツPB開発・新規事業支援](https://www.bonnie-deco.com/food-maker-pb.html)：プライベートブランド（PB）商品開発、新規事業としてのスイーツ事業参入のご支援
+- [コンセプトカフェ・コラボカフェ様のオリジナルスイーツ開発](https://www.bonnie-deco.com/concept-cafe.html)：SNS映え・フォトジェニックなオリジナルスイーツの企画製造
 - [プライバシーポリシー](https://www.bonnie-deco.com/privacy-policy.html)
 - [利用規約](https://www.bonnie-deco.com/terms-of-use.html)
 - [特定商取引法に基づく表示](https://www.bonnie-deco.com/tokushoho.html)
