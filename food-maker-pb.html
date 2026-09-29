@@ -156,6 +156,8 @@
 
   .niche-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:22px;}
   .niche-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;}
+  #why .niche-card .num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--brown);color:#fff;font-weight:800;font-size:14px;font-family:"Shippori Mincho",serif;margin-bottom:14px;}
+  #why .niche-card.accent .num{background:var(--berry);}
   .niche-card h3{color:var(--brown-deep);font-size:18px;line-height:1.3;margin:0 0 12px;word-break:keep-all;}
   .niche-card p{margin:0;font-size:15.5px;color:var(--ink);}
   .niche-card.accent{border:2px solid var(--berry);}
@@ -337,18 +339,21 @@
 <section id="why">
   <div class="wrap">
     <div class="section-head center">
-      <h2 class="section-title">選ばれる理由</h2>
+      <h2 class="section-title">選ばれる3つの理由</h2>
     </div>
     <div class="niche-grid">
       <div class="niche-card">
+        <span class="num">1</span>
         <h3>24年の業界ネットワーク</h3>
         <p>代表・速水が製菓業界で培った24年のネットワークを活かし、ファブレスだからこそ実現できる複数の提携工場から最適な体制を選べます。</p>
       </div>
       <div class="niche-card accent">
+        <span class="num">2</span>
         <h3>食品メーカー様との実績</h3>
         <p>老舗食品メーカー様のプライベートブランド（PB）開発・ケーキプロデュースの実績があります。</p>
       </div>
       <div class="niche-card">
+        <span class="num">3</span>
         <h3>味・原価計算・再現性を同時に設計</h3>
         <p>見た目のデザイン性だけでなく、味わいを大切にしながら、量産時の原価計算と品質の再現性まで見据えて試作段階から設計します。</p>
       </div>
