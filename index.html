@@ -434,6 +434,11 @@
   .form-note{grid-column:1/-1;font-size:13px;color:var(--muted);margin:6px 0 0;text-align:center;}
   @media (max-width:600px){.contact-form{grid-template-columns:1fr;}}
 
+  .ig-band{padding:28px 0;background:var(--berry-soft);border-top:1px solid var(--line);}
+  .ig-band .wrap{display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;}
+  .ig-band-lead{margin:0;font-size:16px;font-weight:700;color:var(--brown-deep);}
+  .ig-band-btn{display:inline-flex;align-items:center;max-width:100%;box-sizing:border-box;text-align:center;padding:11px 22px;border-radius:999px;background:var(--berry);color:#fff;text-decoration:none;font-size:15px;font-weight:700;}
+  .ig-band-btn:hover,.ig-band-btn:focus-visible{filter:brightness(1.06);}
   footer{padding:48px 0 32px;font-size:15px;color:var(--muted);border-top:1px solid var(--line);}
   .footer-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;padding-bottom:28px;}
   .footer-info h4{font-family:"Noto Sans JP";font-size:14px;color:var(--brown-deep);margin:0 0 14px;font-weight:700;}
@@ -441,6 +446,8 @@
   .footer-info .row{display:flex;gap:14px;margin-bottom:8px;font-size:14.5px;}
   .footer-info dt{flex:0 0 72px;color:var(--brown);font-weight:600;}
   .footer-info dd{margin:0;color:var(--muted);}
+  .footer-info dd a{color:var(--berry);text-decoration:underline;text-underline-offset:3px;}
+  .footer-info dd a:hover,.footer-info dd a:focus-visible{color:var(--brown-deep);}
   .address-line .addr{display:block;}
   .address-line .addr+.addr{margin-top:10px;}
   .address-line .addr b{display:block;color:var(--brown-deep);font-size:13px;font-weight:700;margin-bottom:1px;}
@@ -986,6 +993,13 @@
   </div>
 </section>
 
+<section class="ig-band" aria-label="公式Instagram">
+  <div class="wrap">
+    <p class="ig-band-lead">公式Instagramでも、スイーツOEM・PB開発についてお伝えしています。</p>
+    <a class="ig-band-btn" href="https://www.instagram.com/bonnie_deco_sweets/" aria-label="公式Instagram（@bonnie_deco_sweets）を見る" target="_blank" rel="noopener">Instagramを見る</a>
+  </div>
+</section>
+
 <footer>
   <div class="wrap footer-grid">
     <div class="footer-info">
@@ -995,6 +1009,7 @@
         <div class="row"><dt>創立</dt><dd>2022年11月</dd></div>
         <div class="row"><dt>所在地</dt><dd class="address-line"><span class="addr"><b>本社：</b>〒190-0022 東京都立川市錦町2-11-2 アイディスクエア立川3階</span><span class="addr"><b>スイーツラボ：</b>〒190-0022 東京都立川市錦町4-12-21 エルハイツ立川2階</span></dd></div>
         <div class="row"><dt>電話番号</dt><dd>042-508-3351</dd></div>
+        <div class="row"><dt>公式SNS</dt><dd><a href="https://www.instagram.com/bonnie_deco_sweets/" target="_blank" rel="noopener">Instagram（@bonnie_deco_sweets）</a></dd></div>
         <div class="row"><dt>事業内容</dt><dd>飲食物・各種商品の企画／開発／製造／販売及び輸出入、<br>営業代行業、各種コンサルティング業務</dd></div>
         <div class="row"><dt>加入団体</dt><dd>秋葉原DXエンターテインメント協会（賛助会員）</dd></div>
       </dl>
@@ -1068,6 +1083,7 @@
   "name": "ボニーデコスイーツ株式会社",
   "description": "「こんなお菓子あったらいいな」を形にする、スイーツ商品開発プロデュース会社。見た目のかわいさ・味わいのおいしさ・量産時の原価計算と品質の再現性を同時に満たします。初回30分は無料相談。",
   "url": "https://www.bonnie-deco.com/",
+  "sameAs": ["https://www.instagram.com/bonnie_deco_sweets/"],
   "logo": "https://www.bonnie-deco.com/logo-yoko-color.png",
   "image": "https://www.bonnie-deco.com/hayami-photo.jpg",
   "telephone": "042-508-3351",
